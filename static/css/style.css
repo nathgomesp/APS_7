@@ -1,0 +1,136 @@
+/* Estilos gerais */
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f5f5f5;
+}
+
+/* Barra de navegação */
+.navbar {
+ background-color: #666;
+ color: white;
+ padding: 15px 20px;
+ display: flex;
+ align-items: center;
+}
+
+.navbar .logo {
+ font-size: 24px;
+ font-weight: bold;
+ display: flex;
+ align-items: center;
+}
+
+.navbar .logo-icon {
+ margin-right: 10px;
+ font-size: 28px;
+}
+
+/* Conteúdo principal */
+.container {
+ display: flex;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+/* Coluna esquerda - Texto introdutório */
+.intro-column {
+ flex: 1;
+ padding: 20px;
+}
+
+.intro-column h1 {
+ font-size: 28px;
+ margin-bottom: 20px;
+}
+
+.intro-column p {
+ line-height: 1.6;
+ margin-bottom: 15px;
+}
+
+/* Coluna direita - Painel de ações */
+.action-column {
+ flex: 1;
+ padding: 20px;
+}
+
+.action-panel {
+ background-color: white;
+ border-radius: 8px;
+ padding: 30px;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.action-panel h2 {
+ text-align: center;
+ margin-bottom: 20px;
+ color: #444;
+}
+
+.action-panel .divider {
+ border-bottom: 1px solid #ddd;
+ margin: 15px 0;
+}
+
+/* Botões de ação */
+.action-button {
+ display: block;
+ width: 100%;
+ padding: 15px;
+ margin: 15px 0;
+ background-color: #b8e0b8;
+ border: none;
+ border-radius: 5px;
+ font-size: 16px;
+ font-weight: bold;
+ color: #333;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+.action-button:hover {
+ background-color: #9ed49e;
+}
+
+.action-button:disabled {
+ background-color: #d8d8d8;
+ cursor: not-allowed;
+}
+
+/* Áreas de status e resultados */
+#statusArea {
+ background-color: #f8f8f8;
+ border: 1px solid #ddd;
+}
+
+#resultsArea {
+ background-color: #f0f8f0;
+ border: 1px solid #b8e0b8;
+}
+
+#resultsContent {
+ margin-top: 10px;
+ line-height: 1.6;
+}
+
+/* Rodapé */
+.footer {
+ background-color: #f0f0f0;
+ text-align: center;
+ padding: 20px;
+ color: #666;
+ font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+ .container {
+  flex-direction: column;
+ }
+ .intro-column, .action-column {
+  width: 100%;
+ }
+}

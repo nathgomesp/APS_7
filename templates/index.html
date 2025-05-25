@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>S-Life: Calculadora de Emergia</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+ <!-- Barra de navegação -->
+ <div class="navbar">
+  <div class="logo">
+   <span class="logo-icon"> </span> S-Life: Calculadora de Emergia
+  </div>
+ </div>
+
+ <!-- Conteúdo principal -->
+ <div class="container">
+  <!-- Coluna esquerda - Texto introdutório -->
+  <div class="intro-column">
+   <h1>S-life — a ferramenta inovadora para calcular e otimizar a emergia de produtos e serviços!</h1>
+
+   <p>Conheça o S-life, a sua nova ferramenta para calcular a emergia de produtos e serviços de forma precisa e eficiente. Sistema inovador baseado na renomada plataforma Scale, o S-life permite analisar toda a energia utilizada ao
+longo do ciclo de vida, desde a extração até o descarte, ajudando pesquisadores,
+engenheiros e organizações a entenderem e otimizar seus impactos ambientais.</p>
+   <p>Com uma interface intuitiva e integração com bases de dados
+especializadas, o S-life é a escolha ideal para quem busca promover a
+sustentabilidade e valorizar suas ações ESG. Descubra o potencial de transformar
+sua análise de ciclo de vida com o S-life e contribua para um futuro mais
+consciente!</p>
+  </div>
+
+  <!-- Coluna direita - Painel de ações -->
+  <div class="action-column">
+   <div class="action-panel">
+    <h2>Vamos Começar!</h2>
+    <div class="divider"></div>
+    <h3 style="text-align: center;">Calculadora de Emergia</h3>
+
+    <!-- Botões de ação -->
+    <button class="action-button" id="importButton">Importar Dados LCI</button>
+    <button class="action-button" id="calculateButton" disabled>Calcular Emergia</button>
+    <button class="action-button" id="viewResultsButton" disabled>Visualizar Resultados</button>
+    <button class="action-button" id="configButton">Configurações</button>
+
+    <!-- Área para exibir status e resultados -->
+    <div id="statusArea" style="margin-top: 20px; padding: 10px; borderradius: 5px; display: none;"></div>
+    <!-- Área para exibir resultados -->
+    <div id="resultsArea" style="margin-top: 20px; padding: 10px; borderradius: 5px; display: none;">
+     <h3>Resultados do Cálculo de Emergia</h3>
+     <div id="resultsContent"></div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-- Rodapé -->
+ <div class="footer">
+  <p>©2025 S-Life Calculadora de Emergia</p>
+  <p>Entenda os impactos do Ciclo de Vida dos Produtos</p>
+ </div>
+
+ <!-- Input de arquivo oculto -->
+ <input type="file" id="fileInput" accept=".xml" style="display: none;">
+
+ <!-- Script para lógica da interface -->
+ <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
